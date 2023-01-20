@@ -6,6 +6,7 @@ import java.util.EnumSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Supplier;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -25,16 +26,18 @@ import thelm.jaopca.api.modules.JAOPCAModule;
 import thelm.jaopca.utils.ApiImpl;
 import thelm.jaopca.utils.MiscHelper;
 
-@JAOPCAModule(modDependencies = "mekanism@[9.9.20,)")
+@JAOPCAModule(modDependencies = "mekanism")
 public class MekanismCompatModule implements IModule {
 
 	private static final Set<String> TO_DUST_BLACKLIST = new TreeSet<>(Arrays.asList(
-			"bronze", "charcoal", "coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "osmium", "quartz",
-			"refined_glowstone", "refined_obsidian", "steel", "tin"));
+			"bronze", "charcoal", "coal", "copper", "diamond", "emerald", "fluorite", "gold", "iron", "lapis",
+			"lead", "netherite", "osmium", "quartz", "refined_glowstone", "refined_obsidian", "steel", "tin",
+			"uranium"));
 	private static final Set<String> TO_CRYSTAL_BLACKLIST = new TreeSet<>(Arrays.asList(
-			"charcoal", "coal", "diamond", "emerald", "lapis", "quartz"));
+			"charcoal", "coal", "diamond", "emerald", "fluorite", "lapis", "quartz"));
 	private static final Set<String> TO_ORE_BLACKLIST = new TreeSet<>(Arrays.asList(
-			"coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "osmium", "quartz", "redstone", "tin"));
+			"coal", "copper", "diamond", "emerald", "gold", "iron", "lapis", "lead", "netherite", "netherite_scrap",
+			"osmium", "quartz", "redstone", "tin", "uranium"));
 	private static Set<String> configToDustBlacklist = new TreeSet<>();
 	private static Set<String> configToCrystalBlacklist = new TreeSet<>();
 	private static Set<String> configToOreBlacklist = new TreeSet<>();

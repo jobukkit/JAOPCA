@@ -1,0 +1,22 @@
+{
+    "itemGroup.jaopca": "JAOPCA",
+
+    "block.jaopca.storage_blocks": "%s-blok",
+    "item.jaopca.dusts": "%s-stof",
+    "item.jaopca.nuggets": "%s-klompje",
+    "item.jaopca.tiny_dusts": "Snufje %s-stof",
+    "item.jaopca.small_dusts": "Hoopje %s-stof",
+    "fluid.jaopca.molten": "Gesmolten %s",
+    "item.jaopca.molten": "Emmer gesmolten %s",
+
+    "item.jaopca.mekanism_dirty_dusts": "Vuil %s-stof",
+    "item.jaopca.mekanism_clumps": "%s-klomp",
+    "item.jaopca.mekanism_shards": "%s-scherf",
+    "item.jaopca.mekanism_crystals": "%s-kristal",
+    "slurry.jaopca.mekanism_dirty": "Vuile %s-slurrie",
+    "slurry.jaopca.mekanism_clean": "Schone %s-slurrie",
+
+    "item.jaopca.silents_mechanisms_chunks": "%s-ertsstukken",
+
+    "item.jaopca.create_crushed_ores": "Gemalen %s-erts"
+}
