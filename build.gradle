@@ -84,9 +84,6 @@ dependencies {
     implementation fg.deobf("mezz.jei:jei-1.15.2:6.0.3.15")
     implementation fg.deobf("vazkii.patchouli:Patchouli:1.15.2-1.2-35.2")
 
-    //JitPack
-
-    //CurseMaven
     implementation fg.deobf("com.simibubi.create:create")
     implementation fg.deobf("mekanism:Mekanism")
 //    implementation fg.deobf("mekanism:MekanismGenerators")
